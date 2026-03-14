@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Dômes du Parc | Réserver</title>
+  <link rel="icon" type="image/png" href="Images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-reservation">
+  <header class="site-header">
+    <a class="logo" href="accueil.html" aria-label="Retour à l'accueil">
+      <img src="Images/logo.png" alt="Logo Les Dômes du Parc">
+    </a>
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="primary-nav" class="nav-right">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="domes.html">Nos Dômes</a></li>
+        <li><a href="activite.html">Activités</a></li>
+        <li><a href="reserver.html">Réserver</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Nous joindre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Réservation</p>
+      <h1>Réservez votre séjour</h1>
+      <p>Sélectionnez votre dôme et vos dates pour obtenir une estimation immédiate.</p>
+    </section>
+
+    <section class="reservation-section">
+      <form id="reservation-form" novalidate>
+        <label for="typeDome">Type de dôme</label>
+        <select id="typeDome" name="typeDome" required>
+          <option value="">Sélectionner</option>
+          <option value="dome2">Dôme 2 personnes</option>
+          <option value="dome4">Dôme 4 personnes</option>
+        </select>
+
+        <label for="dateArrivee">Date d'arrivée</label>
+        <input type="date" id="dateArrivee" name="dateArrivee" required>
+
+        <label for="dateDepart">Date de départ</label>
+        <input type="date" id="dateDepart" name="dateDepart" required>
+
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <div class="price-summary">
+          <label for="nuits">Nombre de nuits</label>
+          <input type="text" id="nuits" name="nuits" readonly>
+
+          <label for="montant">Tarif par nuit</label>
+          <input type="text" id="montant" name="montant" readonly>
+
+          <label for="total">Total estimé</label>
+          <input type="text" id="total" name="total" readonly>
+        </div>
+
+        <button type="submit">Envoyer la demande</button>
+        <p id="reservation-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Les Dômes du Parc</h3>
+      <p>Hébergement forestier haut de gamme à Saint-Mathieu-du-Parc.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="domes.html">Nos Dômes</a>
+      <a href="activite.html">Activités</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>819-532-2916</p>
+      <a href="mailto:info.lesdomesduparc@gmail.com">info.lesdomesduparc@gmail.com</a>
+      <p>Saint-Mathieu-du-Parc, QC</p>
+    </div>
+    <div class="copyright">
+      © 2026 – Alimenté par <a href="https://tonportfolio.vercel.app">DEV/DAVE</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
