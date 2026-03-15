@@ -134,7 +134,7 @@ main {
   width: 100%;
   background: #1e352d;
   left: 0;
-  transition: 0.3s ease;
+  transition: 0.1s ease-in-out;
 }
 
 .hamburger span:nth-child(1) { top: 0; }
@@ -616,7 +616,7 @@ button {
     gap: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.1s ease-in-out;
     box-shadow: none;
     z-index: 110;
   }
